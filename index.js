@@ -21,5 +21,5 @@ function currentLine(line){
   for(var i = 0; i < line.length; i++ ){
     katz.push(`${i + 1}. ${line[i]}${i === line.length -1? "" : ","}`);
   }
-
+return `The line is currently: ${katz.join(" ")}`;
 }
