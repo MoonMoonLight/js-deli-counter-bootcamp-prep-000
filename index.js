@@ -12,4 +12,3 @@ function nowServing(katzDeli) {
   }
   return `Currently serving ${katz}.`;
 }
-
