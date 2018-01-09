@@ -6,10 +6,11 @@ function takeANumber(katzDeli, name){
 }
 
 function nowServing(katzDeliLine){
+  katzDeli = katzDeli.shift();
   if(katzDeli.length === 0){
     return "There is nobody waiting to be served!"
   }
-return `Currently serving ${katzDeliLine[0]}.`;
-katzDeli = katzDeli.shift();
+return `Currently serving ${katzDeli.shift()}.`;
+
 
 }
