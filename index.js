@@ -1,16 +1,14 @@
-var katzDeliLine = [];
+var katzDeli = [];
 
-function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.indexOf(name) + 1} in line.`;
+function takeANumber(katzDeli, name){
+  katzDeli.push(name);
+  return `Welcome, ${name}. You are number ${katzDeli.indexOf(name) + 1} in line.`;
 }
 
 function nowServing(katzDeliLine){
-  if(katzDeliLine.length >= 1){
-    console.log(`Currently serving ${katzDeliLine[0]}.`);
-    katzDeliLine.shift();
-
-  } else {
+  if(katzDeli.length === 0){
     return "There is nobody waiting to be served!"
   }
 }
+console.log(`Currently serving ${katzDeliLine[0]}.`);
+katzDeliLine.shift();
